@@ -45,8 +45,7 @@ function applyTheme(theme) {
     updateCountdown();
     const interval = setInterval(updateCountdown, 1000);
   }
-  
-  // Exemplo de chamada:
-  //const targetDate = new Date('2025-05-31T00:00:00').getTime();
-  //startCountdown(targetDate);
+
+  const targetDate = new Date('0000-00-00T00:00:00').getTime();
+  startCountdown(targetDate);
   
