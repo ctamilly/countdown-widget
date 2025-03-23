@@ -46,3 +46,22 @@ h1 {
     padding: 8px 10px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+  }
+  .time-box {
+    background-color: rgba(50, 50, 50, 0.8);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #000;
+  }
+  .time-box {
+    background-color: rgba(240, 240, 240, 0.85);
+    color: #333;
+  }
+}
