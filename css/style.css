@@ -14,7 +14,7 @@ body {
   }
   
   h1, #countdown-title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 1.7rem;
   }
   
@@ -28,13 +28,13 @@ body {
     background-color: rgba(50, 50, 50, 0.85);
     padding: 10px 15px;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     min-width: 55px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
-    font-weight: bold;
-    margin: 0 0.5rem;
+    font-weight: normal;
+    margin: 0 0.2rem;
   }
   
   .time-box:hover, #countdown span:hover {
@@ -51,7 +51,7 @@ body {
   
   @media (prefers-color-scheme: dark) {
     body {
-      color: #fff;
+      color: #333;
     }
     .time-box, #countdown span {
       background-color: rgba(50, 50, 50, 0.8);
@@ -90,5 +90,5 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
   }
