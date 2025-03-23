@@ -17,6 +17,7 @@ function applyTheme(theme) {
     });
   }
   
+  // Exemplo de função para countdown (caso queira integrar também):
   function startCountdown(targetDate) {
     const countdownElement = document.getElementById('countdown');
   
@@ -29,10 +30,11 @@ function applyTheme(theme) {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-      document.getElementById('days').textContent = days;
-      document.getElementById('hours').textContent = hours;
-      document.getElementById('minutes').textContent = minutes;
-      document.getElementById('seconds').textContent = seconds;
+      document.getElementById('days').textContent = `${days}d`;
+      document.getElementById('hours').textContent = `${hours}h`;
+      document.getElementById('minutes').textContent = `${minutes}m`;
+      document.getElementById('seconds').textContent = `${seconds}s`;
+
   
       if (distance < 0) {
         countdownElement.textContent = "Countdown Finished!";
@@ -43,6 +45,8 @@ function applyTheme(theme) {
     updateCountdown();
     const interval = setInterval(updateCountdown, 1000);
   }
- 
-const targetDate = new Date('2025-05-31T00:00:00').getTime();
-startCountdown(targetDate);
+  
+  // Exemplo de chamada:
+  const targetDate = new Date('2025-05-31T00:00:00').getTime();
+  startCountdown(targetDate);
+  
