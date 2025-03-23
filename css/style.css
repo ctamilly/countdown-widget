@@ -33,7 +33,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
-    font-weight: normal;
+    font-weight: 500;
     margin: 0 0.2rem;
   }
   
@@ -54,7 +54,7 @@ body {
       color: #333;
     }
     .time-box, #countdown span {
-      background-color: rgba(50, 50, 50, 0.8);
+      background-color: rgba(50, 50, 50, 0.5);
       color: #fff;
     }
   }
