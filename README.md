@@ -20,7 +20,7 @@ Você pode personalizar o widget usando parâmetros diretamente na URL. Basta ad
 | Parâmetro | Descrição                      | Exemplo de uso                                      |
 |-----------|--------------------------------|----------------------------------------------------|
 | `theme`   | Força o tema claro ou escuro (`light` ou `dark`) | `https://ctamilly.github.io/countdown-widget/?theme=dark` |
-| `date`    | Define a data e hora alvo do countdown (padrão ISO 8601) | `https://ctamilly.github.io/countdown-widget/?date=2025-01-01T00:00:00` |
+| `date`    | Define a data e hora alvo do countdown (padrão ISO 8601) | `https://ctamilly.github.io/countdown-widget/?date=2025-12-31T00:00:00` |
 | `title`   | Define o título do countdown   | `https://ctamilly.github.io/countdown-widget/?title=Meu+Evento` |
 | `embed`   | Oculta elementos desnecessários para visualização em iframe | `https://ctamilly.github.io/countdown-widget/?embed` |
 
@@ -30,6 +30,5 @@ Exemplo:
 
 ## ✔️ Como usar como embed:
 ```html
-<iframe src="https://ctamilly.github.io/countdown-widget/?date=2025-01-01T00:00:00&title=Meu+Evento" width="100%" height="200" frameborder="0"></iframe>
-```
+<iframe src="https://ctamilly.github.io/countdown-widget/?date=2025-12-31T20:00:00&theme=dark&title=🎉+Questionário" width="100%" height="200" frameborder="0"></iframe>```
 
