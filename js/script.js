@@ -46,6 +46,7 @@ function applyTheme(theme) {
     const interval = setInterval(updateCountdown, 1000);
   }
 
-  const targetDate = new Date('0000-00-00T00:00:00').getTime();
-  startCountdown(targetDate);
+    const dateFromUrl = urlParams.get('date');
+    const targetDate = dateFromUrl ? new Date(dateFromUrl).getTime() : new Date('2025-12-31T00:00:00').getTime();
+    startCountdown(targetDate);
   
