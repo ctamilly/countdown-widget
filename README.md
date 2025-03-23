@@ -1,34 +1,46 @@
 # Countdown Widget
 
-Um widget de contagem regressiva personalizável que ajusta o tema automaticamente de acordo com o modo claro/escuro do seu sistema ou aplicativo (como o Capacities App).
+Um widget simples e responsivo de contagem regressiva, personalizável via parâmetros de URL.
 
-## ✅ Acesse a página do widget:
-👉 [Visualizar Countdown Widget](https://ctamilly.github.io/countdown-widget/)
+## ✅ Acesse a página
+👉 [Clique aqui para abrir o Countdown Widget](https://ctamilly.github.io/countdown-widget/)
 
-## ✅ Gerar código de embed:
-👉 [Gerar embed para seu site ou aplicativo](https://ctamilly.github.io/countdown-widget/?embed)
+## ✅ Como personalizar via parâmetros de URL
+Você pode alterar a data, o título e o tema diretamente na URL.
 
-## ✔️ Recursos principais:
-- Contagem regressiva dinâmica
-- Tema automático (claro/escuro)
-- Design responsivo
-- Compatível com personalização por parâmetros na URL
+### Parâmetros disponíveis:
+- **`date`** — Defina a data-alvo da contagem regressiva (formato `YYYY-MM-DDTHH:MM:SS`).
+- **`title`** — Defina o título que aparece acima do contador.
+- **`theme`** — Altere o tema. Valores possíveis: `light` ou `dark`.
 
-## ✔️ Personalização por parâmetros na URL:
-Você pode personalizar o widget usando parâmetros diretamente na URL. Basta adicioná-los após o `?` no link.
+### Exemplos:
 
-| Parâmetro | Descrição                      | Exemplo de uso                                      |
-|-----------|--------------------------------|----------------------------------------------------|
-| `theme`   | Força o tema claro ou escuro (`light` ou `dark`) | `https://ctamilly.github.io/countdown-widget/?theme=dark` |
-| `date`    | Define a data e hora alvo do countdown (padrão ISO 8601) | `https://ctamilly.github.io/countdown-widget/?date=2025-12-31T00:00:00` |
-| `title`   | Define o título do countdown   | `https://ctamilly.github.io/countdown-widget/?title=Meu+Evento` |
-| `embed`   | Oculta elementos desnecessários para visualização em iframe | `https://ctamilly.github.io/countdown-widget/?embed` |
+#### ✅ Alterar data:
+```
+https://ctamilly.github.io/countdown-widget/?date=2025-12-31T23:59:59
+```
 
-➡️ **Você pode combinar parâmetros**:  
-Exemplo:  
-`https://ctamilly.github.io/countdown-widget/?date=2025-01-01T00:00:00&title=Ano+Novo&theme=light`
+#### ✅ Alterar título:
+```
+https://ctamilly.github.io/countdown-widget/?title=Prova%20Final
+```
+*(use `%20` para espaços)*
 
-## ✔️ Como usar como embed:
+#### ✅ Alterar data + título + tema juntos:
+```
+https://ctamilly.github.io/countdown-widget/?date=2025-12-31T23:59:59&title=Entrega%20do%20Projeto&theme=dark
+```
+
+## ✅ Como gerar embed
+Se quiser embutir o contador em outro site via `iframe`, use:
 ```html
-<iframe src="https://ctamilly.github.io/countdown-widget/?date=2025-12-31T20:00:00&theme=dark&title=🎉+Questionário" width="100%" height="200" frameborder="0"></iframe>```
+<iframe src="https://ctamilly.github.io/countdown-widget/?date=2025-12-31T23:59:59&title=Evento%20Especial" width="100%" height="150" style="border:none;"></iframe>
+```
+
+## ✅ Personalizações CSS adicionais
+Você pode editar o arquivo `style.css` para alterar as cores, tamanhos de fonte ou bordas.
+
+---
+
+
 
