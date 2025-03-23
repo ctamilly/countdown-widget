@@ -47,6 +47,6 @@ function applyTheme(theme) {
   }
   
   // Exemplo de chamada:
-  const targetDate = new Date('2025-05-31T00:00:00').getTime();
-  startCountdown(targetDate);
+  //const targetDate = new Date('2025-05-31T00:00:00').getTime();
+  //startCountdown(targetDate);
   
